@@ -1,3 +1,4 @@
+/*Background Styling*/
 body {
     background-image: url("floorwhite.jpg");
     background-repeat: no-repeat;
@@ -6,19 +7,14 @@ body {
     background-size: 100% 100%;
 }
 
-/*Footer Styling*/
-
 /*Header Styling*/
 ul {
     list-style-type: none;
     text-align: center;
-
-    /*margin: auto;*/
     width: 100%;
     padding: 0;
     overflow: hidden;
     background-color: #345;
-
     float:none;
 }
 
@@ -62,4 +58,13 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*Home Page Content Styling*/
+#homeContent {
+  border-style: groove;
+  border-color: rgb(88,88,88);
+  margin:auto;
+  width: auto;
+  padding: 5px;
 }
