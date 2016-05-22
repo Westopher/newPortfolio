@@ -5,7 +5,9 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: 100% 100%;
+    font-family: 'Helvetica Neue', sans-serif;
 }
+/*End Background Styling*/
 
 /*Header Styling*/
 ul {
@@ -31,7 +33,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgb(248,248,248);
 }
 
 li.dropdown {
@@ -59,12 +61,36 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*End Drop Down Styling*/
 
 /*Home Page Content Styling*/
 #homeContent {
   border-style: groove;
   border-color: rgb(88,88,88);
-  margin:auto;
+  margin-top: 230px;
   width: auto;
   padding: 5px;
+  text-align: center;
+  background-color: rgb(248,248,248);
 }
+#divSub {
+
+}
+#main {
+ color: #111;
+ padding: 25px;
+ font-size: 30px;
+ font-weight: 500;
+ text-align: center;
+}
+
+a:link, #main {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+a:hover {
+  color: rgb(0, 0, 170);
+}
+/* Home Page Content Styling End */
