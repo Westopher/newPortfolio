@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: 100%, 100%;
+    background-size: 100% 100%;
 }
 
 /*Footer Styling*/
@@ -11,14 +11,19 @@ body {
 /*Header Styling*/
 ul {
     list-style-type: none;
-    margin: 0;
+    text-align: center;
+
+    /*margin: auto;*/
+    width: 100%;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #345;
+
+    float:none;
 }
 
 li {
-    float: left;
+    display: inline-block;
 }
 
 li a, .dropbtn {
