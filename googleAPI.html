@@ -1,5 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="styling/portCSS.css" rel="stylesheet" type="text/css" >
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 
 <!-- Header Begin -->
   <ul>
@@ -27,3 +28,31 @@
     <li><a href="about.html">About</a></li>
   </ul>
   <!-- Header End -->
+
+<!-- Google Maps API Begin -->
+<script>
+var myCenter=new google.maps.LatLng(25.7617,-80.1918);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:11,
+  mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+  <div id="googleMap" style="width:80%;height:50%;"></div>
+
+  <!-- Google Maps API End -->
